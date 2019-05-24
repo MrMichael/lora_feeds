@@ -16,7 +16,7 @@ This repository is originated from [this](https://github.com/JiapengLi/OpenWrt-l
 Edit your feeds.conf or feed.conf.default and add the following to it:
 
     # Semtech
-    src-git lora https://github.com/xueliu/lora-feed
+    src-git lora https://github.com/MrMichael/lora_feeds
 
 Update your build environment and install the package:
 
@@ -33,7 +33,7 @@ Exit, save and build
     $ make -j4
 
 Following two packages are only working on Raspberry Pi
- 
+
     $ make package/wiringpi/install
     $ make package/single_chan_pkt_fwd/install
 
