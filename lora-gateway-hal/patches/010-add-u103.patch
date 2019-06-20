@@ -1,0 +1,11 @@
+diff -ruN a/libloragw/src/loragw_reg.c b/libloragw/src/loragw_reg.c
+--- a/libloragw/src/loragw_reg.c	2017-04-05 11:34:03.000000000 +0000
++++ b/libloragw/src/loragw_reg.c	2019-06-19 11:52:39.000000000 +0000
+@@ -551,6 +551,7 @@
+             DEBUG_MSG("ERROR READING CHIP VERSION REGISTER\n");
+             return LGW_REG_ERROR;
+         }
++		u = 103;
+         if (u != loregs[LGW_VERSION].dflt) {
+             DEBUG_PRINTF("ERROR: NOT EXPECTED CHIP VERSION (v%u)\n", u);
+             return LGW_REG_ERROR;
